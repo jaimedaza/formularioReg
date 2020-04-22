@@ -1,0 +1,15 @@
+html
+  head
+    title Formulario Registro
+  body
+    a(href='/register') Registrarse
+    table
+      thead
+        tr
+          td Name
+          td Email
+      tbody
+        each visitante in visitors
+          tr
+            td= visitante["name"]
+            td= visitante["email"]
